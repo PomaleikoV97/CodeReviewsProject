@@ -10,13 +10,13 @@ package by.itstep.pomaleiko.javalessons.lesson22.model.entity;
 
         // full constructor with params/args
         public Student(String name, int age, double mark, boolean alive) {
-            setName(name);
-            setAge(age);
-            setAlive(alive);
-//            this.name = name;
-//            this.age = age;
+//            setName(name);
+//            setAge(age);
+//            setAlive(alive);
+            this.name = name;
+            this.age = age;
             this.mark = mark;
-//            this.alive = alive;
+            this.alive = alive;
         }
 
 
@@ -56,9 +56,13 @@ package by.itstep.pomaleiko.javalessons.lesson22.model.entity;
 
         //    default constructor
         public String getInfo() {
-            return "Student - " + getName() + ": age = " + getAge()
+            return "Student - " + name + ": age = " + age
                     + ", mark = " + mark
-                    + ", is alive = " + (isAlive() ? "yes" : "no");
+                    + ", is alive = " + (alive ? "yes" : "no");
+
+//            return "Student - " + getName() + ": age = " + getAge()
+//                    + ", mark = " + mark
+//                    + ", is alive = " + (isAlive() ? "yes" : "no");
         }
 
     }
